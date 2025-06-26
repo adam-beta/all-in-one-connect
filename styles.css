@@ -110,6 +110,12 @@ body {
   outline: none;
 }
 
+.get-quote-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -523,6 +529,7 @@ footer .social-links a {
 }
 
 
+
 /* Responsive Nav - Mobile */
 @media (max-width: 768px) {
   .nav-list {
@@ -545,7 +552,22 @@ footer .social-links a {
   .hamburger {
     display: block;
   }
+
+  /* Smaller "Get a Quote" button on tablets and smaller */
+  .get-quote-btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+  }
 }
+
+/* Even smaller on phones */
+@media (max-width: 480px) {
+  .get-quote-btn {
+    padding: 0.15rem 0.4rem;
+    font-size: 0.6rem;
+  }
+}
+
 
 /* Responsive hero */
 @media (max-width: 900px) {
