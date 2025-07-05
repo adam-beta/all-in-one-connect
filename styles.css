@@ -425,12 +425,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-items: center; /* 🔥 this centers the input rows */
 }
+
 
 .form-row {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* ⬅️ control form width here */
 }
+
 
 .form-row label {
   font-weight: 600;
@@ -443,6 +448,8 @@ body {
 .form-row input,
 .form-row select,
 .form-row textarea {
+  width: 100%;
+  max-width: 600px;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -452,6 +459,7 @@ body {
   font-family: var(--font-secondary);
   transition: border-color 0.3s ease;
 }
+
 
 .form-row input::placeholder,
 .form-row textarea::placeholder {
@@ -467,17 +475,23 @@ body {
 
 .contact-form button {
   width: 100%;
+  max-width: 600px; /* same as your input fields */
   padding: 1rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
   border: none;
   background-color: var(--color-accent-blue);
   color: var(--color-text-primary);
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 1.5rem; /* added margin */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-self: center;
 }
+
+
+
 
 
 .contact-form button:hover,
